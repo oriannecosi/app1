@@ -20,9 +20,13 @@ ui <- fluidPage(
                      choices = list("Etudiant(e)" = 1, "Apprenti(e)" = 2),
                      selected = 1),
   
+  radioButtons("Statut", label = h2("Quel est votre sexe ? "), 
+               choices = list("Femme" = 1, "Homme" = 2),
+               selected = 1),
   
   hr(),
   fluidRow(column(2, verbatimTextOutput("value")))
+  
   
 )
 
